@@ -43,10 +43,30 @@ const ourTeam = [
    
 ];
 
+const team = document.getElementById('team');
+
+
  for (let i = 0; i < ourTeam.length; i++){
     console.log(ourTeam[i]);
 
     console.log('Name', ourTeam[i].Name);
     console.log('role', ourTeam[i].role);
     console.log('image', ourTeam[i].image);
+
+    team.innerHTML += `
+    <ul>
+        <li>
+            Name:<strong>${ourTeam[i].Name}</strong>
+        </li>
+        <li>
+            Role:<strong>${ourTeam[i].role}</strong>
+        </li>
+        <li>
+            Image:<strong>${ourTeam[i].image}</strong>
+        </li>
+    </ul>
+    <hr>
+    `;
  }
+
+ 
