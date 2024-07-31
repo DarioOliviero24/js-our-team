@@ -62,7 +62,10 @@ const team = document.getElementById('team');
             Role:<strong>${ourTeam[i].role}</strong>
         </li>
         <li>
-            Image:<strong>${ourTeam[i].image}</strong>
+            Image:
+            <div>
+                 <img src="img/${ourTeam[i].image}">
+            </div>
         </li>
     </ul>
     <hr>
