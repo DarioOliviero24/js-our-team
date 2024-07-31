@@ -43,3 +43,10 @@ const ourTeam = [
    
 ];
 
+ for (let i = 0; i < ourTeam.length; i++){
+    console.log(ourTeam[i]);
+
+    console.log('Name', ourTeam[i].Name);
+    console.log('role', ourTeam[i].role);
+    console.log('image', ourTeam[i].image);
+ }
